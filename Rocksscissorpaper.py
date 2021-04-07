@@ -1,4 +1,3 @@
-#6.Rock beats scissors, Scissors beats paper, Paper beats rock
 player1=input("enter player 1 name ")
 player2=input("enter player 2 name ")
 res=0
