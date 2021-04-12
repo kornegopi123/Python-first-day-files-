@@ -1,4 +1,5 @@
 from InvalidUserError import *
+
 class User:
     
     def __init__(self,uname,passw,fname,lname,dob,street,city,state,country,pin):
@@ -18,6 +19,7 @@ class User:
             return True
         else:
             raise (InvalidUserError("From Invalid user",uname))
+    
     def display(self):
         print(self.fname)
         print(self.lname)
@@ -30,7 +32,7 @@ class User:
     
 user1=User("gopi",9908,"g","k","18-09-1999","street","city","state","india",522303)
 try:
-    output = user1.verifyUser("abc","124")
+    output = user1.verifyUser("gopi",9908)
     print(output)
 except InvalidUserError as e:
     print (e.message)
