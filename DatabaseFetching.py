@@ -5,7 +5,7 @@ def verifyUser(uid,passw):
     cursor=mydb.cursor()
     cursor.execute("SELECT passw FROM users WHERE userid = '"+uid+"'")
     infor=cursor.fetchone()
-    print("database data",infor)
+    #print("database data",infor)
     if(infor!=None):
         if(passw==infor[0]):
             return True

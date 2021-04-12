@@ -12,7 +12,7 @@ mycursor = mydb.cursor()
 
 #mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
 sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
-val = ("gopi", "Phanidam")
+val = ("korne", "Phanidam")
 mycursor.execute(sql, val)
 mydb.commit()
 print(mycursor.rowcount, "record inserted.")
